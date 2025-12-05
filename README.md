@@ -438,10 +438,12 @@ Contexto:
 - Para registrar, olhe o Swagger.yaml e pesquise como funciona o POST /auth/register
 - Para logar, olhe o Swagger.yaml e pesquise como funciona o POST /auth/login.
 - O teste de performance passa quando o percentil de 95 é menor que 2 segundos.
+- Esse teste deve rodar para 10 usuário virtuais com 15 segundos de duração.
 
 Regras:
 - Salve o teste dentro da pasta test/k6/login.test.js
 - Crie check do status code de sucesso contido na resposta de cada request que você fizer.
+- Execute os testes depois de criar para saber se está funcionando corretamente.
   
 ## License
 
