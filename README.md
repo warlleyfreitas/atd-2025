@@ -428,6 +428,23 @@ src/
 - **CORS** - Cross-origin resource sharing
 - **YAML** - Swagger specification
 
+## Prompt
+Objetivo:
+Crie um teste de performance com K6 para registrar um usuário e fazer login dele.
+
+Contexto:
+- O k6 já está instalado na minha máquina.
+- O teste a ser criado é apenas para o fluxo principal (não preciso de fluxo alternativo ou de exceção).
+- Para registrar, olhe o Swagger.yaml e pesquise como funciona o POST /auth/register
+- Para logar, olhe o Swagger.yaml e pesquise como funciona o POST /auth/login.
+- O teste de performance passa quando o percentil de 95 é menor que 2 segundos.
+- Esse teste deve rodar para 10 usuário virtuais com 15 segundos de duração.
+
+Regras:
+- Salve o teste dentro da pasta test/k6/login.test.js
+- Crie check do status code de sucesso contido na resposta de cada request que você fizer.
+- Execute os testes depois de criar para saber se está funcionando corretamente.
+  
 ## License
 
 ISC License
